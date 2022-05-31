@@ -11,7 +11,6 @@
 
 <body>
     <header>
-        <!-- high score and timer  -->
     <section id = "score_keeper" style="display: none">
         <input type="button" value="View High Scores" onclick="view_high_scores()"></br>
         Score: <var id="score"> </var>
@@ -24,22 +23,19 @@
     </header>
 
 
-    <!-- Home Container with quiz rules and Start button -->
     <container>
     <div id="homeContainer" class="none">
         <h1>Welcome to the Anime Quiz!</h1>
         <p>Try answering the following anime related questions within the time limit. You have 80 seconds to complete the challenge.</p> 
-        <p>For each incorrect answer, you will be penalized 3 seconds from the timer. If the timer hits 0, you will be sent to the Shadow Realm!</p>
+        <p>For each incorrect answer, you will be penalized 5 seconds from the timer. If the timer hits 0, you will be sent to the Shadow Realm!</p>
         <p><strong>Get ready to test your anime knowledge!</strong></p>
         <br>
         <button id="startBtn">Start Challenge</button>
     </div>
     </container>
 
-        <!-- QUIZ CONTAINER -->
         <div id="quizContainer" style="display: none"> 
             <h2 id="questionHeading"></h2>
-            <!-- <div id="answerChoices"> -->
                 <ul>
                     <div id="choices">
                         <button id="answerChoiceA"></button>
@@ -57,7 +53,6 @@
             </div>
 </body>
 
-<!-- RESULTS & HIGH SCORES CONTAINER -->
 <section id="AnswerResponse">
 </section>
 
